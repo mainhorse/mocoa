@@ -1,0 +1,28 @@
+
+<app-home-page></app-home-page>
+<main>
+    <div class="datosUsuario">
+        <div class="close">
+            <button routerLink="/"></button>
+        </div>
+        <h1>Registro</h1>
+        <form #formularioRegistro="ngForm" (ngSubmit)="registrarUsuario()">
+            <input placeholder="Correo" name="correo" #correo="ngModel" [(ngModel)] = "usuarioRegistro.correo" required>
+            <input placeholder="Nombre" name="nombre" #nombre="ngModel" [(ngModel)] = "usuarioRegistro.nombre" required>
+            <input placeholder="Ciudad" name="ciudad" #ciudad="ngModel" [(ngModel)] = "usuarioRegistro.ciudad" required>
+            <input placeholder="Contraseña" type="password" name="contrasena" #contrasena="ngModel" [(ngModel)]="usuarioRegistro.contrasena" required>
+            <select name="tipo" #tipo="ngModel" [(ngModel)] = "usuarioRegistro.tipoUsuario">
+                <option value="usuario">Turista</option>
+                <option value="local">Local</option>
+                <option value="transporte">Transporte</option>
+                <option value="hotel">Hotel</option>
+                <option value="restaurante">Restaurante</option>
+                <option value="agencia">Agencia de viajes</option>
+            </select>
+            <button class="btnRegistro">Registrar</button>
+        </form>
+        <button class="facebook">Facebook</button>
+        <button class="google">Google</button>
+    </div>
+   
+</main>

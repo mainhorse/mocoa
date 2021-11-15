@@ -1,0 +1,20 @@
+
+<app-home-page></app-home-page>
+<main>
+    <div class="datosUsuario">
+        <div class="close">
+            <button routerLink="/"></button>
+        </div>
+        <h1>Ingreso</h1>
+        <form usuarioLogin="ngForm" (ngSubmit)="verificarLogin()">
+            <input placeholder="Correo" name="correo" #correo="ngModel" [(ngModel)]="usuarioLogin.correo" required>
+            <input placeholder="Contraseña" name="contrasena" #contrasena="ngModel" [(ngModel)]="usuarioLogin.contrasena" required>
+            <button class="btnIngreso">Ingresar</button>
+        </form>
+        <p>¿Olvido su contraseña?</p>
+        <button class="facebook">Facebook</button>
+        <button class="google">Google</button>
+    </div>
+   
+</main>
+
