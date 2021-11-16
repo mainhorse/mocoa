@@ -11,8 +11,6 @@ export class HotelNavComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
-  
   car = '../assets/img/carritoCompras.png';
   imgUser = '../assets/img/usuario.png';
   count = 0;

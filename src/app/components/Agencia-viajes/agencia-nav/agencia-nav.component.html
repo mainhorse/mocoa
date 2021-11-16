@@ -1,1 +1,15 @@
-<p>agencia-nav works!</p>
+<nav>
+    <button class="data" title="Datos" (click)="datos()"></button>
+    <p>Bienvenido Don Pepe</p>
+    <div class="dataUser" id="dataUser">
+        <img src={{imgUser}} alt="user" >
+        <form action="" class="formData">
+            <input name="correo" placeholder="correo">
+            <input name="nombre" placeholder="nombre">
+            <input name="ciudad" placeholder="ciudad">
+            <input name="contrasena" placeholder="contraseña">
+            <button type="submit">Actualizar</button>
+        </form>
+    </div>
+    <a routerLink="/">Cerrar</a>
+</nav>
