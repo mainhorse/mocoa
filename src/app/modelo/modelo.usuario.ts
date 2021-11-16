@@ -14,7 +14,7 @@ export class UsuarioModelo{
         public planes : String,
         public mediosPago : String,
         public promociones: String,
-        public compras: [],
+        public compras: Array<any>,
         public estado : Boolean,
         public permisos : Boolean
            

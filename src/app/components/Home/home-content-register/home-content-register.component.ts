@@ -42,12 +42,10 @@ export class HomeContentRegisterComponent implements OnInit {
       }
     }, err=>{
       let errMensaje = <any>err;
-      if(!
-        errMensaje != null){
+      if(!errMensaje != null){
           console.log(errMensaje);
         }
     });
-    swal("Usuario registrado");
   }
 
 }

@@ -55,20 +55,20 @@ export class HomeContentLoginComponent implements OnInit {
         );
 
         this.usuarioServicio.guardarSesion(datosUsuarioSesion);
-        if(this.usuarioLogin.tipoUsuario = "turista"){
+        if(this.usuarioLogin.tipoUsuario == "turista"){
           this._rote.navigate(['/Turista']);
-        } else if(this.usuarioLogin.tipoUsuario = "local"){
+        } else if(this.usuarioLogin.tipoUsuario == "local"){
           this._rote.navigate(['Local']);
-        } else if(this.usuarioLogin.tipoUsuario = "transporte"){
+        } else if(this.usuarioLogin.tipoUsuario == "transporte"){
           this._rote.navigate(['Transporte']);
-        } else if(this.usuarioLogin.tipoUsuario = "hotel"){
+        } else if(this.usuarioLogin.tipoUsuario == "hotel"){
           this._rote.navigate(['/Hotel']);
-        } else if(this.usuarioLogin.tipoUsuario = "restaurante"){
+        } else if(this.usuarioLogin.tipoUsuario == "restaurante"){
           this._rote.navigate(['/Restaurante']);
-        }else if(this.usuarioLogin.tipoUsuario = "agencia"){
-             this._rote.navigate(['/']);
+        }else if(this.usuarioLogin.tipoUsuario == "agencia"){
+             this._rote.navigate(['/Agencia']);
         }else{
-          
+             this._rote.navigate[('/')];
         }
         
       }
